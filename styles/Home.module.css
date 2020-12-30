@@ -1,11 +1,7 @@
 /* principal #007F5A */
-.container  {
-  font-family: 'Montserrat', sans-serif;
-}
 
 .nav_main {
   border-bottom : 3px solid #007F5A;
-  padding : 0px 5px;
   display : flex;
   align-items: center;
   background-color : white;
@@ -29,13 +25,27 @@
 }
 
 .nav_main p{
-  border-right : 2px solid #007F5A;
   text-align : center;
-  font-size : 20px;
+  padding : 5px 0;
+  font-size : 15px;
 }
 
-.nav_main span {
-  flex : 1;
+@keyframes nav_link_bigger {
+  from {color : #007F5A; font-size : 15px}
+  to {
+    color : black;
+    font-size : 18px;
+    font-weight: 400;
+  }
+}
+
+.nav_main p:hover {
+  color : black;
+  line-height: 0;
+  font-size : 18px;
+  font-weight: 400;
+  animation : nav_link_bigger;
+  animation-duration: 500ms;
 }
 
 .nav_main a {
@@ -45,7 +55,6 @@
 
 .ApneaDockLink {
   margin : 0;
-  margin-right : 8px;
   box-sizing : border-box;
 }
 
@@ -57,7 +66,6 @@
 .ApneaDockLink a {
   border: solid 2px #007F5A;
   font-weight: bold;
-  font-size : 18px;
   border-radius : 6px;
   color : #007F5A;
   padding : 8px 10px;
@@ -67,5 +75,44 @@
   color: white;
   background-color : #007F5A;
   animation : example;
-  animation-duration: 0.5s;
+  animation-duration: 500ms;
+}
+
+.main {
+  margin : 0;
+  padding : 0;
+  width: 100%;
+}
+
+.WhatOImage {
+  margin : 1% 2%;
+  max-width: 900px;
+  vertical-align: top;
+}
+
+.WhatOBlock {
+  position: relative;
+  bottom : 90px;
+  background-color: #FFFFFF;
+  padding : 10px;
+  margin-bottom : -80px;
+  border-right : 5px solid #007F5A;
+  font-size : 18px;
+}
+
+.WhatOBlock h1 {
+  color : #007F5A;
+}
+
+.WhatOContainer  {
+  padding-bottom : 0;
+  display : flex;
+  justify-content: center;
+  align-items : center;
+  background-color: #EDEDED;
+}
+
+.WhatOContainer h1 {
+  margin-bottom : 5px;
+  color : #007F5A;
 }

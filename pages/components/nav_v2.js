@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
 
-export default function Nav (props) {
+export default function Nav (...props) {
 	return (
     <nav className={styles.nav_main}>
       <ul>
@@ -10,8 +10,8 @@ export default function Nav (props) {
 		      <Image
 			      src='/../public/orthoapnea-logo-claim-200x68.png'
 			      alt='logo'
-			      width={200}
-            height={68}
+			      width={150}
+            height={51}
 		      />
         </span>
            <div className={styles.ApneaDockLink}>
@@ -25,7 +25,7 @@ export default function Nav (props) {
           <Link href="/">
             <a>
               <p>
-              Home
+              Inicio
               </p>
             </a>
           </Link>
